@@ -1,0 +1,25 @@
+{
+  "name": "expressapp",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node ./build/dev-server.js",
+    "build": "node ./build/build.js",
+    "server": "nodemon ./app.js",
+    "start": "node ./app.js"
+  },
+  "dependencies": {
+    "connect-redis": "^3.3.3",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "express-session": "^1.15.6",
+    "hiredis": "^0.5.0",
+    "http-errors": "~1.6.2",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.0",
+    "mysql": "^2.16.0",
+    "redis": "^2.8.0",
+    "session-file-store": "^1.2.0"
+  }
+}
