@@ -59,7 +59,6 @@
         </div>
       </div>
     </div>
-    <el-button @click="getData">获取</el-button>
   </div>
 </template>
 
@@ -76,7 +75,7 @@ export default {
       loginInfo: false, // 当前用户登录状态
       activeIndex: '1',
       language: 'English',
-      langs: ['zh-CN', 'en-US']
+      langs: ['zh-CN', 'en-US', 'ja']
     }
   },
   mounted () {
@@ -86,9 +85,6 @@ export default {
     }
   },
   methods: {
-    getData () {
-      console.log(this.$t('lang.menu'))
-    },
     handleSelect (key, keyPath) {
       console.log(key, keyPath)
     },
