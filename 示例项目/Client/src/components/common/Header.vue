@@ -42,20 +42,20 @@
             </el-dropdown-item>
           </el-dropdown-menu>
         </el-dropdown>
-        <!-- <div>
+        <div>
           <span
             href="javascript:void(0)"
             @click="changeLangEvent">{{ language }}</span>
-        </div> -->
+        </div>
         <div>
-          <select
+          <!-- <select
             v-model="$i18n.locale"
             name="select">
             <option
               v-for="(lang,i) in langs"
               :key="i"
               :value="lang">{{ lang }}</option>
-          </select>
+          </select> -->
         </div>
       </div>
     </div>

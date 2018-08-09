@@ -64,8 +64,7 @@
       <h1>时间格式：</h1>
       <p>{{ $d(new Date(), 'short') }}</p>
       <p>{{ $d(new Date(), 'long') }}</p>
-      <p>{{ $d(new Date(), 'lang.time', 'short') }}</p>
-      <p>{{ $d(new Date(), 'long', 'ja-JP') }}</p>
+      <p>{{ $d(new Date(), 'long', la) }}</p>
 
       <h1>金额符号：</h1>
       <p>{{ $n(100, 'currency') }}</p>
@@ -89,6 +88,7 @@ export default {
     return {
       path: 'lang.xxx',
       url: 'http://...',
+      la: 'en-US',
 
       changeUrl: '/change',
       refundUrl: '/refund',
